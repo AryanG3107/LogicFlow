@@ -6,6 +6,14 @@ Built as a final project for ENGR 1182 (Engineering Design) at The Ohio State Un
 
 ---
 
+## Screenshots
+
+| Start Screen | Game Over | Win Screen |
+|:---:|:---:|:---:|
+| ![Start Screen](docs/screenshots/start_screen.png) | ![Game Over](docs/screenshots/game_over.png) | ![Win Screen](docs/screenshots/win_screen.png) |
+
+---
+
 ## Gameplay
 
 ![Start Screen](docs/screenshots/start_screen.png)
@@ -17,6 +25,18 @@ The player spawns in the center of a 100x100 tile world. Four biomes are placed 
 - A key that drops when the puzzle is solved
 
 Collect all four keys, return to the door near the spawn, and enter to win.
+
+### World Map
+
+![World Map](docs/screenshots/world_map.png)
+
+*The 100x100 tile open world with four biomes in the corners. The player starts at the center.*
+
+### Biome Examples
+
+| Grass Biome (AND Gate) | Wood Biome (OR Gate) |
+|:---:|:---:|
+| ![Grass Biome Gameplay](docs/screenshots/gameplay_grass.png) | ![Wood Biome Gameplay](docs/screenshots/gameplay_wood.png) |
 
 **Controls**
 
@@ -87,6 +107,10 @@ sprite(:,:,3) = 0;
 
 Red is used for Game Over, aqua for Win.
 
+| ![Game Over](docs/screenshots/game_over.png) | ![Win Screen](docs/screenshots/win_screen.png) |
+|:---:|:---:|
+| *Game Over screen (red tint)* | *Win screen (aqua tint)* |
+
 ---
 
 ## File Structure
@@ -94,18 +118,18 @@ Red is used for Game Over, aqua for Win.
 ```
 LogicFlow/
 ├── src/
-│   ├── logic_flow_main.m      # Entry point: world setup and game loop orchestration
-│   ├── gameLoop.m             # Core game loop: input, movement, collision, camera, logic checks
-│   ├── buildFrame.m           # Composes each rendered frame from world state
-│   ├── simpleGameEngine.m     # Sprite rendering engine (OOP, provided by course)
-│   ├── gameStartFunction.m    # Start screen
-│   ├── gameOverFunction.m     # Game over screen
-│   ├── gameWinFunction.m      # Win screen
-│   ├── pauseScreen.m          # Pause overlay
-│   ├── showMessage.m          # Blocking message display utility
-│   └── TileBrowser.m          # Dev tool: browse and identify tile IDs from sprite sheet
+│   ├── logic_flow_main.m    # Entry point: world setup and game loop orchestration
+│   ├── gameLoop.m           # Core game loop: input, movement, collision, camera, logic checks
+│   ├── buildFrame.m         # Composes each rendered frame from world state
+│   ├── simpleGameEngine.m   # Sprite rendering engine (OOP, provided by course)
+│   ├── gameStartFunction.m  # Start screen
+│   ├── gameOverFunction.m   # Game over screen
+│   ├── gameWinFunction.m    # Win screen
+│   ├── pauseScreen.m        # Pause overlay
+│   ├── showMessage.m        # Blocking message display utility
+│   └── TileBrowser.m        # Dev tool: browse and identify tile IDs from sprite sheet
 ├── assets/
-│   └── retro_pack.png         # 16x16 sprite sheet (1000+ tiles)
+│   └── retro_pack.png       # 16x16 sprite sheet (1000+ tiles)
 ├── docs/
 │   └── screenshots/
 └── README.md
@@ -121,6 +145,7 @@ LogicFlow/
 2. Open MATLAB and set the working directory to the `src/` folder
 3. Make sure `retro_pack.png` is in the `assets/` folder one level up, or copy it into `src/`
 4. Run:
+
 ```matlab
 logic_flow_main
 ```
