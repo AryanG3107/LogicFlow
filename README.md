@@ -34,9 +34,9 @@ Collect all four keys, return to the door near the spawn, and enter to win.
 
 ### Biome Examples
 
-| Grass Biome (AND Gate) | Wood Biome (OR Gate) |
+| AND Gate Biome | OR Gate Biome |
 |:---:|:---:|
-| ![Grass Biome Gameplay](docs/screenshots/gameplay_grass.png) | ![Wood Biome Gameplay](docs/screenshots/gameplay_wood.png) |
+| ![AND Gate Biome](docs/screenshots/gameplay_and.png) | ![OR Gate Biome](docs/screenshots/gameplay_wood.png) |
 
 **Controls**
 
@@ -169,5 +169,5 @@ logic_flow_main
 
 Developed by **Aryan Gujral** as part of ENGR 1182 (Engineering Design) at The Ohio State University, Spring 2025. The game was designed to be used as an interactive teaching tool for middle and high school students learning digital logic fundamentals.
 
-- [LinkedIn](https://linkedin.com/in/aryang3107)
+- [LinkedIn](https://www.linkedin.com/in/aryan-gujral/)
 - [GitHub](https://github.com/AryanG3107)
