@@ -1,0 +1,17 @@
+# MATLAB autosave files
+*.asv
+
+# MATLAB compiled files
+*.mex*
+*.p
+
+# Simulink
+*.slxc
+slprj/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# MATLAB preferences
+*.mat
