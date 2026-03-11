@@ -2,7 +2,7 @@
 
 A top-down RPG built in MATLAB where you solve logic gate puzzles. Explore a scrolling world, visit four biomes (AND, OR, XNOR, NAND), flip levers to satisfy each gate's truth table, collect keys, and unlock the final door.
 
-Final project for ENGR 1182 at The Ohio State University.
+Final project for ENGR 1181 at The Ohio State University.
 
 ---
 
