@@ -208,11 +208,6 @@ while ~escapePressed
             arrowUpTileId, arrowDownTileId, arrowLeftTileId, arrowRightTileId);
 
         gameScene.drawScene(viewBg, viewFg);
-
-        %Lives Check
-        if lives <= 0
-            break;
-        end
         continue;
     end
 
@@ -336,7 +331,7 @@ while ~escapePressed
         end
     end
 
-    %% Horizonal Camera movement scrolling vs player movement
+    %% Horizontal Camera movement scrolling vs player movement
     if borderLockCol ~= 0
         % Camera pinned horizontally --> player moves on screen
         playerColScreen = playerColWorld - camLeftWorldCol + 1;
